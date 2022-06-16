@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #h1{
+        text-align: center;
+    }
+    #bb{
+        border: 1px solid red;
+        display: flex;
+        width: 90%;
+        margin: auto;
+
+    }
+
+    #bb>div:first-child{
+        padding-left: 80px;
+        padding-right: 40px;
+        background-color: #f7f1e8;
+    }
+    .a{
+        width: 50%;
+    }
+    .a>h3{
+        font-size: 80px;
+        line-height: 1px;
+    }
+    .a>p{
+        font-size: 20px;
+    }
+
+    
+    .a>img{
+        width: 100%;
+        height: 100%;
+
+  /*  abox1 css part starts from here which contains 6 div(img,name,price,dis) */
+
+    }
+  #abox1{
+    border: 1px solid red;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+  }
+    #abox1>div>img{
+        width: 420px;
+    }
+
+    /* abox2 css parts starts from here and which is big div after that 6 div */
+
+    #abox2{
+        border:  1px solid red;
+        display: flex;
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        justify-content: space-between;
+
+
+    }
+    
+    
+    #abox2>div:first-child{
+        width: 58%;
+    }
+
+    #abox2>div:last-child{
+        width: 40%;
+        padding-top: 150px;
+    }
+
+
+    .box2{
+        width: 100%;
+    }
+
+    #abox2>div:last-child>h4{
+        text-align: center;
+    }
+
+    #abox2>div:last-child>p{
+        text-align: center;
+        font-size: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+
+ /*  abox3 css part starts from here which contains 6 div(img,name,price,dis) */
+    #abox3{
+        border: 1px solid red;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    }
+
+    #abox3>div>img{
+        width: 420px;
+    }
+
+
+     /* abox4 css parts starts from here and which is big div after that 6 div */
+
+     #abox4{
+        border:  1px solid red;
+        display: flex;
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+
+
+    }
+    .box4{
+        width: 50%;
+    }
+
+
+
+    
+ /*  abox5 css part starts from here which contains 6 div(img,name,price,dis) */ 
+ /* this comes after that big div */
+ #abox5{
+        border: 1px solid red;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    }
+
+    #abox5>div>img{
+        width: 420px;
+    }
+
+
+
+    
+     /* abox6 css parts starts from here and which is big div after that 6 div */
+
+     #abox6{
+        border:  1px solid red;
+        display: flex;
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+
+
+    }
+    .box6{
+        width: 50%;
+    }
+
+</style>
+<body>
+ 
+ <p id="h1">Have a question?We can help.</p>
+    <div id="bb">
+        <div class="a">
+            <p>New arrivals</p>
+            <h3><i>Instant</i></h3>
+           
+            <h3>summer classics</h3>
+            <p>------------</p>
+          <p>Fresh chinos, breezy linen, sailor stripes…our timeless picks feel like forever favorites from the very first wear.</p>
+          
+        </div>
+        <div class="a">
+            <img src="https://www.jcrew.com/brand_creative/2022/202206-Jun/w_instantclassics/v3/2022jun_0607_w_classics_img0.jpg" alt="">
+        </div>
+    </div>
+    </div> -->
+</body>
+</html>
+
+<script>
+
+
+
+
+// this is forbox1 which contains the data of 6div(which contain img, name,price,dis)
+    let forbox1 =[
+        {img:"https://www.jcrew.com/s7-img-facade/BF357_PK5730?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Relaxed linen crewneck T-shirt",
+    price:"INR 4,506.00",
+    dis:"UP TO 40% OFF. PRICE AS MARKED."
+},
+
+{img:"https://www.jcrew.com/s7-img-facade/BF358_PK5730?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Relaxed linen V-neck T-shirt",
+    price:"INR 4,506.00",
+    dis:"UP TO 23% OFF. PRICE AS MARKED."
+},
+
+{img:"https://www.jcrew.com/s7-img-facade/BI622_PK5826?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"One-shoulder linen shift dress",
+    price:"INR 9,730.00",
+    dis:"UP TO 32%  OFF. PRICE AS MARKED."
+},
+
+{img:"https://www.jcrew.com/s7-img-facade/AW586_PK6756?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Linen muscle tank",
+    price:"INR 5,159.00",
+    dis:"UP TO 29% OFF. PRICE AS MARKED."
+},
+
+{img:"https://www.jcrew.com/s7-img-facade/BF357_PK6756?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Relaxed linen crewneck T-shirt",
+    price:"INR 4,506.00",
+    dis:"UP TO 40% OFF. PRICE AS MARKED."
+},
+
+
+{img:"https://www.jcrew.com/s7-img-facade/BI713_PK6756?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Linen-cupro sheath dress",
+    price:"INR 19,525.00",
+    dis:"UP TO 24% OFF. PRICE AS MARKED."
+}
+    ]
+    let box1=document.createElement("div")
+    box1.setAttribute("id","abox1")
+    // this div(box1) contains 6 div
+     display(forbox1)
+
+     function display(forbox1){
+        forbox1.forEach(function(ele,index){
+        let div1=document.createElement("div")
+        let img1=document.createElement("img")
+        img1.setAttribute("src",forbox1[index].img)
+        let name=document.createElement("p")
+        name.innerText=forbox1[index].name
+        let price=document.createElement("p")
+        price.innerText=forbox1[index].price
+        price.style.color="red"
+        let disc=document.createElement("p")
+        disc.innerText=forbox1[index].dis
+        disc.style.color="red"
+
+        div1.append(img1,name,price,disc)
+        box1.append(div1)
+   
+        document.querySelector("body").append(box1)
+        
+
+    })
+     }
+    
+
+    let box2=document.createElement("div")
+    box2.setAttribute("id","abox2")
+    // this is another div(box2) for big img after 6 div of(box1)
+    let minidiv1=document.createElement("div")
+    let img=document.createElement("img")
+    img.setAttribute("src","https://www.jcrew.com/brand_creative/2022/202205-May/linen-shop/2022may_0426_linen_w_img1.jpg")
+    img.setAttribute("class","box2")
+    minidiv1.append(img)
+    let minidiv2=document.createElement("div")
+    let img1=document.createElement("img")
+    img1.setAttribute("src","https://www.jcrew.com/brand_creative/2022/202205-May/linen-shop/2022may_0426_linen_w_img2.jpg")
+    img1.setAttribute("class","box2")
+    let h4=document.createElement("h4")
+    h4.innerText="SHORT & SWEET"
+    let p1=document.createElement("p")
+    p1.innerText="Our squareneck top and high-rise short both crafted in linen-cupro, with just a hint of shine."
+ minidiv2.append(img1,h4,p1)
+    box2.append(minidiv1,minidiv2)
+    document.querySelector("body").append(box2)
+
+// forbox2 things comes after the box2 things
+    // this is forbox2 which contains the data of 6div(which contain img, name,price,dis)
+    let forbox2 =[
+        {img:"https://www.jcrew.com/s7-img-facade/BJ365_YD1861?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"V-back linen top",
+    price:"INR 7,771.00",
+    dis:"UP TO 34% OFF. PRICE AS MARKED."
+},
+
+{img:"https://www.jcrew.com/s7-img-facade/BH419_NA6434?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Relaxed linen V-neck T-shirt",
+    price:"INR 4,506.00 ",
+    dis:"UP TO 23% OFF. PRICE AS MARKED."
+},
+
+{img:"https://www.jcrew.com/s7-img-facade/BF383_PK5663?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"New seaside short in linen blend",
+    price:"INR 7,771.00",
+    dis:"UP TO 40% OFF. PRICE AS MARKED."
+},
+
+{img:"https://www.jcrew.com/s7-img-facade/BI586_YD1198?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Relaxed linen romper",
+    price:"INR 11,689.00",
+    dis:"UP TO 40% OFF. PRICE AS MARKED."
+},
+
+{img:"https://www.jcrew.com/s7-img-facade/BI587_NA6436?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Smocked linen dress",
+    price:"INR 12,995.00",
+    dis:"UP TO 40% OFF. PRICE AS MARKED."
+},
+
+
+{img:"https://www.jcrew.com/s7-img-facade/BI959_PT1979?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Classic-fit soft gauze shirt in gathered floral block print",
+    price:"INR 11,689.00",
+    dis:"UP TO 40% OFF. PRICE AS MARKED."
+}
+    ]
+    
+    let box3=document.createElement("div")
+    box3.setAttribute("id","abox3")
+    // this div(box3) contains 6 div
+     dis(forbox2)
+
+     function dis(forbox2){
+        forbox2.forEach(function(ele,index){
+        let div1=document.createElement("div")
+        let img1=document.createElement("img")
+        img1.setAttribute("src",forbox2[index].img)
+        let name=document.createElement("p")
+        name.innerText=forbox2[index].name
+        let price=document.createElement("p")
+        price.innerText=forbox2[index].price
+        price.style.color="red"
+        let disc=document.createElement("p")
+        disc.innerText=forbox2[index].dis
+        disc.style.color="red"
+
+        div1.append(img1,name,price,disc)
+        box3.append(div1)
+   
+        document.querySelector("body").append(box3)
+        
+
+    })
+     }
+
+     let box4=document.createElement("div")
+    box4.setAttribute("id","abox4")
+    // this is another div(box4) for big img after 6 div of(box3)
+    let box4img=document.createElement("img")
+    box4img.setAttribute("src","https://www.jcrew.com/brand_creative/2022/202206-Jun/w_instantclassics/v3/2022jun_0607_w_classics_img3.jpg")
+    box4img.setAttribute("class","box4")
+    let box4img1=document.createElement("img")
+    box4img1.setAttribute("src","https://www.jcrew.com/brand_creative/2022/202206-Jun/w_instantclassics/v4/2022jun_0607_w_classics_img4.jpg")
+    box4img1.setAttribute("class","box4")
+    box4.append(box4img,box4img1)
+    document.querySelector("body").append(box4)
+
+
+
+
+
+
+    // forbox3 things comes after the box2 things
+    // this is forbox3 which contains the data of 6div(which contain img, name,price,dis)
+    let forbox3 =[
+        {img:"https://www.jcrew.com/s7-img-facade/BH818_NA6858?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Pleated slouchy boyfriend chino pant",
+    price:"INR 12,799.00",
+    dis:"UP TO 40% OFF. PRICE AS MARKED."
+},
+
+{img:"https://www.jcrew.com/s7-img-facade/BF359_YD1396?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Boatneck T-shirt in classic stripe",
+    price:"INR 4,767.00",
+    dis:"UP TO 26% OFF. PRICE AS MARKED."
+},
+
+{img:"https://www.jcrew.com/s7-img-facade/AX974_BL8133?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Tiered dress in broken-in jersey",
+    price:"INR 4,767.00 ",
+    dis:"UP TO 26% OFF. PRICE AS MARKED."
+},
+
+{img:"https://www.jcrew.com/s7-img-facade/BC116_BL8133?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Ruched V-neck one-piece",
+    price:"INR 11,036.00",
+    dis:"UP TO 28% OFF. PRICE AS MARKED."
+},
+
+{img:"https://www.jcrew.com/s7-img-facade/AV808_EE0294?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Medium Montauk tote",
+    price:"INR 7,118.00 ",
+    dis:"UP TO 39% OFF. PRICE AS MARKED."
+},
+
+
+{img:"https://www.jcrew.com/s7-img-facade/BF357_WT0002?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
+    name:"Relaxed linen crewneck T-shirt",
+    price:"INR 4,506.00",
+    dis:"UP TO 40% OFF. PRICE AS MARKED."
+}
+    ]
+    
+    let box5=document.createElement("div")
+    box5.setAttribute("id","abox5")
+    // this div(box5) contains 6 div
+     disp(forbox3)
+
+     function disp(forbox3){
+        forbox3.forEach(function(ele,index){
+        let div1=document.createElement("div")
+        let img1=document.createElement("img")
+        img1.setAttribute("src",forbox3[index].img)
+        let name=document.createElement("p")
+        name.innerText=forbox3[index].name
+        let price=document.createElement("p")
+        price.innerText=forbox3[index].price
+        price.style.color="red"
+        let disc=document.createElement("p")
+        disc.innerText=forbox3[index].dis
+        disc.style.color="red"
+
+        div1.append(img1,name,price,disc)
+        box5.append(div1)
+   
+        document.querySelector("body").append(box5)
+        
+
+    })
+     }
+
+
+
+
+     let box6=document.createElement("div")
+    box6.setAttribute("id","abox6")
+    // this is another div(box6) for big img after 6 div of(box5)
+    let box6img=document.createElement("img")
+    box6img.setAttribute("src","https://www.jcrew.com/brand_creative/2022/202206-Jun/w_instantclassics/v3/2022jun_0607_w_classics_img5.jpg")
+    box6img.setAttribute("class","box6")
+    let box6img1=document.createElement("img")
+    box6img1.setAttribute("src","https://www.jcrew.com/brand_creative/2022/202206-Jun/w_instantclassics/v3/2022jun_0607_w_classics_img6.jpg")
+    box6img1.setAttribute("class","box6")
+    box6.append(box6img,box6img1)
+    document.querySelector("body").append(box6)
+
+</script>
