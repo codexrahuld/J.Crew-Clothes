@@ -225,3 +225,337 @@ margin-top: 50px;
    width: 50%;
 }
 /*Womens New Arrivals Page css End here*/
+
+ /* hover show css section */
+           
+
+            /* women hover scetion css */
+            /* .p-bold{
+        font-weight: bold;
+    } */
+    body{
+      background-color:white;
+      border: 1px solid rgb(131, 43, 43);
+  }
+  .p-bold{
+      font-weight: bold;
+  }
+
+  #womhovr{
+    margin: auto;
+    margin-top: 50px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #swimhovr{
+    margin: auto;
+    margin-top: 50px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #menhovr{
+    margin: auto;
+    margin-top: 50px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #kidshovr{
+    margin: auto;
+    margin-top: 50px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #cashhovr{
+        margin-top: 50px;
+        width: 20%;
+        display: block;
+        box-sizing: border-box;
+        padding: 0 12px 12px;
+        text-align: center;
+        justify-content: center;
+        box-shadow: 0 0 10px black;
+
+  }
+
+  #storieshovr{
+        margin: auto;
+        margin-top: 50px;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+  }
+  #saleshovr{
+        margin: auto;
+        margin-top: 50px;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+  }
+
+          #Shopsstory>h3{
+          margin-left: -200px;
+          }
+          #img1{
+              margin-left: -200px;
+          }
+          #img2{
+              margin-left: -5px;
+              margin-top: -500px;
+          }
+          #img{
+              margin-left: -200px;
+          }
+          #img{
+              margin-left: -200px;
+          }
+
+
+          /* foteer css */
+   /* body{
+    background-color: rgb(240,241,242);
+  } */
+  #container{
+      margin: auto;
+      margin-top: 50px;
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+    }
+    #container>div:nth-child(2){
+      width: 40%;
+      border: 1px solid black;
+    }
+    #first{
+      margin-left:20px;
+      width:60%;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    #first > div >p:nth-child(1){
+      font-weight: bold;
+    }
+    #second > p:nth-child(1){
+      font-weight: bold;
+      text-align: left;
+      margin-left: 50px;
+    }
+    #second{
+      text-align: center ;
+    }
+    
+    button{
+      
+      padding: 8px 5px 8px 5px;
+      background-color: black;
+      color: white;
+    }
+    #third{
+      margin-left: 20px;
+      margin-top: 30px;
+      width: 400px;
+      display: flex;
+      justify-content: space-between;
+    }
+    #third > div > img{
+      width: 100%;
+      height: 40px;
+    }
+    #fourth{
+      margin-left: 40px;
+      margin-top: 50px;
+      width: 80px;
+      display: flex;
+      justify-content: space-between;
+      text-decoration: underline;
+    }
+    #fourth > div > img{
+       width: 100%;
+       height: 18px;
+    }
+    #fifth{
+      margin-left: 40px;
+      margin-top: 30px;
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+    }
+    #fifth>div>img{
+      width: 100%;
+      height: 40px;
+    }
+    #sixth{
+      margin: auto;
+      margin-top: 40px;
+      text-align: center;
+    }
+   div>a{
+    text-decoration: none;
+   }
+   /* foteer css end */
+
+   #home-page{
+    margin: auto;
+    margin-top: 20px;
+    
+   }
+   #home-page>p{
+    margin: auto;
+    margin-bottom: 20px;
+   }
+   #navbar{
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+  }
+  #ptag{
+      margin: auto;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 10px;
+      /* border: 1px solid black; */
+  }
+  p{
+      font-size: 20px;
+  }
+  #navnames{
+      margin: auto;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 30px;
+      /* border: 1px solid black; */
+  }
+  i{
+      font-size: 30px;
+  }
+  #navnames>button{
+      width: 100px;
+      height: 50px;
+      
+      background-color: transparent;
+      border: transparent;
+      font-size: 20px;
+      
+      font-weight: bolder;
+  }
+  
+  #navnames>button:hover{
+      color: pink;
+  }
+  
+  #fafam:hover{
+      color: pink;
+  }
+  #fafam1:hover{
+      color: pink;
+  }
+  #fafam2:hover{
+      color: pink;
+  }
+
+  #main{
+  /* border: 1px solid red; */
+  margin: auto;
+  width: 35%;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 400px;
+  text-align: left;
+  border: 1px solid black;
+  margin-top: 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#main2{
+  /* border: 1px solid red; */
+  margin: auto;
+  width: 35%;
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 450px;
+  text-align: left;
+  border: 1px solid black;
+  
+  
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+input{
+  display: block;
+  width: 80%;
+  height: 40px;
+  
+  margin: auto;
+  margin-top: 5px;
+  border: 2px solid #e8eaed;
+  border-radius: 5px;
+  
+}
+label{
+  display: block;
+  width: 80%;
+  
+  font-weight: bolder;
+  margin: auto;
+  color: gray;
+  margin-top: 15px;
+  
+  
+}
+button{
+  border: 0px;
+  display: block; 
+  width: 81%;
+  height: 40px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background-color: #e8eaed ;
+  color: rgb(138, 128, 128);
+  /* font-weight: bold; */
+  font-size: 18px;
+  border-radius: 5px;
+}
+h1{
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  color: black;
+  
+}
+h1+input{
+  margin-top: 40px;
+
+}
+input:placeholder-shown{
+font-size: large;
+color: gray;
+}
+p{
+  margin: auto;
+  margin-top: 3px;
+  
+}
+span{
+color: rgb(52, 52, 168);
+font-weight: bold;
+}
+#header{
+  
+  margin: auto;
+  margin-top: 20px;
+  
+}
+img{
+  margin: auto;
+}
